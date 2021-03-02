@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         btnRoll.setOnClickListener{ v -> onClickRoll()}
         imgDice1.setOnClickListener { v -> onClickRoll() }
         imgDice2.setOnClickListener { v -> onClickRoll() }
+        imgDice3.setOnClickListener { v-> onClickRoll() }
+        imgDice4.setOnClickListener { v-> onClickRoll() }
+        imgDice5.setOnClickListener { v-> onClickRoll() }
+        imgDice6.setOnClickListener { v-> onClickRoll() }
         btnClear.setOnClickListener { v -> onClickClear() }
         Log.d(TAG, "OnCreate")
 

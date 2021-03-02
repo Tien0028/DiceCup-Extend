@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/tvHistory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/btnRoll"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HistoryActivity">
 
-</RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="634dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="93dp"
+            android:layout_height="50dp"
+            android:background="@color/red"
+            app:srcCompat="@drawable/abc_vector_test"
+            android:onClick="onClickBack"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="Clear"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
